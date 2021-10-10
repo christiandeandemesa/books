@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authors</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/books.css') }}">
+</head>
+<body>
+    <div class=left>
+        <div>
+            <h1>New Author</h1>
+        </div>
+        <form action = '/create/author' method = 'post' class=form>
+            <div>
+                <label for = 'name'>Name:</label>
+                <input type = 'text' name = 'name'>
+            </div>
+            <div>
+                <input type = 'submit' value = 'Create' class=create>
+            </div>
+        </form>
+    </div>
+    <div class=right>
+        <div>
+            <h1>All Authors</h1>
+        </div>
+        <div class=total>
+            {% for author in all_authors %}
+            <a href='/authors/{{author.id}}'>{{author.name}}</a>
+            {% endfor %}
+        </div>
+        <div>
+            <a href = '/books'>Add Book</a>
+        </div>
+    </div>
+</body>
+</html>

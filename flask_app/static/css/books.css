@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+body {
+    height: 100vh;
+    width: auto;
+    background-color: rgb(39, 39, 39);
+    display: flex;
+}
+.left {
+    height: 40%;
+    width: 35%;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.right {
+    height: 40%;
+    width: 30%;
+    margin-right: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.form {
+    height: 50%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.create {
+    height: 100%;
+    width: 20%;
+    color: black;
+}
+.add {
+    height: 100%;
+    width: 100%;
+    color: black;
+}
+.left div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.total {
+    height: 50%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 2px dotted gold;
+    padding: 1%;
+}
+table {
+    height: 70%;
+    width: 70%;
+    border-collapse: collapse;
+}
+tr, th, td {
+    border: 2px dotted gold;
+}
+.list {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px dotted gold;
+}
+.big {
+    height: 40%;
+}
+.center {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.black {
+    color: black;
+}
